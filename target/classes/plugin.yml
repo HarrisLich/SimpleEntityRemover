@@ -1,0 +1,16 @@
+name: SimpleEntityRemover
+version: '1.0-SNAPSHOT'
+main: de.harrisblog.simpleentityremover.SimpleEntityRemover
+api-version: 1.18
+commands:
+  er:
+    usage: /er
+permissions:
+  er.*:
+    children:
+      - er.er
+      - er.reload
+  er.er:
+    description: /er
+  er.reload:
+    description: /er reload
